@@ -12,7 +12,7 @@ import NavBar from "./11-navbar/App";
 import Sidebar from "./12-sidebar-modal/App";
 import Stripe from "./13-stripe-submenus/App";
 import Cart from "./14-cart/Provider";
-import Cocktails from "./15-cocktails/App";
+// import Cocktails from "./15-cocktails/App";
 
 const Projects = {
   Birthday,
@@ -29,7 +29,7 @@ const Projects = {
   Sidebar,
   Stripe,
   Cart,
-  Cocktails,
+  // Cocktails,
 };
 
 export default Projects;

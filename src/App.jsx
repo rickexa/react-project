@@ -23,7 +23,7 @@ function App() {
         <Route path="/sidebar" element={<Projects.Sidebar />} />
         <Route path="/stripe" element={<Projects.Stripe />} />
         <Route path="/cart" element={<Projects.Cart />} />
-        <Route path="/cocktails/*" element={<Projects.Cocktails />} />
+        {/* <Route path="/cocktails/*" element={<Projects.Cocktails />} /> */}
       </Routes>
     </BrowserRouter>
   );
