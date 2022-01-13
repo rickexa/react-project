@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Nav keys={keys} />
       <Routes>
-        {/* <Route path="/birthday" element={<Projects.Birthday />} />
-        <Route path="/tours" element={<Projects.Tours />} />
+        <Route path="/birthday" element={<Projects.Birthday />} />
+        {/* <Route path="/tours" element={<Projects.Tours />} />
         <Route path="/reviews" element={<Projects.Reviews />} />
         <Route path="/accordion" element={<Projects.Accordion />} />
         <Route path="/menu" element={<Projects.Menu />} />
@@ -21,8 +21,8 @@ function App() {
         <Route path="/grocery" element={<Projects.Grocery />} />
         <Route path="/navbar" element={<Projects.NavBar />} />
         <Route path="/sidebar" element={<Projects.Sidebar />} />
-        <Route path="/stripe" element={<Projects.Stripe />} />
-        <Route path="/cart" element={<Projects.Cart />} /> */}
+        <Route path="/stripe" element={<Projects.Stripe />} /> */}
+        <Route path="/cart" element={<Projects.Cart />} />
         <Route path="/cocktails/*" element={<Projects.Cocktails />} />
       </Routes>
     </BrowserRouter>

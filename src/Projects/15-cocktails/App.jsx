@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 import { AppProvider } from "./context";
 
 function App() {
-  require("./index.css");
+  require("./index.scss");
   return (
     <AppProvider>
       <Navbar />

@@ -4,7 +4,7 @@ import data from "./questions";
 import SingleQuestion from "./Question";
 
 function App() {
-  require("./questions.css");
+  require("./index.css");
   return (
     <main>
       <div className="container">

@@ -2,7 +2,7 @@ import React from "react";
 import Review from "./Review";
 
 function App() {
-  require("./reviews.css");
+  require("./index.css");
 
   return (
     <main>

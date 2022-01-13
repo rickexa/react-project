@@ -7,20 +7,24 @@ import CartContainer from "./CartContainer";
 // items
 
 function App() {
-  require("./index.css");
+  require("./index2.scss");
   const { loading } = useGlobalContext();
   if (loading) {
     return (
-      <div className="loading">
-        <h1>Loading...</h1>
+      <div id="cart">
+        <div className="loading">
+          <h1>Loading...</h1>
+        </div>
       </div>
     );
   }
   return (
-    <main>
-      <Navbar />
-      <CartContainer />
-    </main>
+    <div id="cart">
+      <main>
+        <Navbar />
+        <CartContainer />
+      </main>
+    </div>
   );
 }
 
