@@ -16,41 +16,43 @@ const SingleCocktail = () => {
   }, [cocktails, id]);
 
   return (
-    <section className="section cocktail-section">
-      <Link to="/cocktails" className="btn btn-primary">
-        Back Home
-      </Link>
-      <h2 className="section-title">{cocktail.name} </h2>
-      <div className="drink">
-        <img src={img} alt={name} />
-        <div className="drink-info">
-          <p>
-            <span className="drink-data">name: </span>
-            {name}
-          </p>
-          <p>
-            <span className="drink-data">category: </span>
-            {name}
-          </p>
-          <p>
-            <span className="drink-data">info: </span>
-            {alcoholic}
-          </p>
-          <p>
-            <span className="drink-data">glass: </span>
-            {glass}
-          </p>
-          <p>
-            <span className="drink-data">instructions: </span>
-            {instructions}
-          </p>
-          <p>
-            <span className="drink-data">ingredients: </span>
-            {ingreds && ingreds.map((ing, index) => <span key={index}>{ing}</span>)}
-          </p>
+    <div id="cocktails">
+      <section className="section cocktail-section">
+        <Link to="/cocktails" className="btn btn-primary">
+          Back Home
+        </Link>
+        <h2 className="section-title">{cocktail.name} </h2>
+        <div className="drink">
+          <img src={img} alt={name} />
+          <div className="drink-info">
+            <p>
+              <span className="drink-data">name: </span>
+              {name}
+            </p>
+            <p>
+              <span className="drink-data">category: </span>
+              {name}
+            </p>
+            <p>
+              <span className="drink-data">info: </span>
+              {alcoholic}
+            </p>
+            <p>
+              <span className="drink-data">glass: </span>
+              {glass}
+            </p>
+            <p>
+              <span className="drink-data">instructions: </span>
+              {instructions}
+            </p>
+            <p>
+              <span className="drink-data">ingredients: </span>
+              {ingreds && ingreds.map((ing, index) => <span key={index}>{ing}</span>)}
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
