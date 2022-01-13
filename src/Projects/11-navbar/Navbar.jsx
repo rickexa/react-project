@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { FaBars, FaTwitter } from "react-icons/fa";
-import { links, social } from "./data";
+import React, { useState } from "react";
+import { FaBars } from "react-icons/fa";
 import logo from "./logo.svg";
 import Links from "./Links";
 import SocialIcons from "./SocialIcons";

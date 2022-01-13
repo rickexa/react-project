@@ -1,9 +1,7 @@
-import React, { useState, useRef } from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useRef } from "react";
 import { links } from "./data";
 
 function Links() {
-  const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
 
   // useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function Slider({ type, onClick }) {

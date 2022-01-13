@@ -5,7 +5,7 @@ import Person from "./Person";
 
 function App() {
   require("./index.css");
-  const [people, setPeople] = useState(data);
+  const [people] = useState(data);
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Loading from "../components/Loading";
 import { useGlobalContext } from "../context";
 import { useParams, Link } from "react-router-dom";
-const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
+// const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 
 const SingleCocktail = () => {
   const { id } = useParams();
@@ -14,7 +13,7 @@ const SingleCocktail = () => {
     const filter = cocktails.filter((cc) => cc.id === id);
     console.log("filter");
     setCocktail(filter[0]);
-  });
+  }, [cocktails, id]);
 
   return (
     <section className="section cocktail-section">

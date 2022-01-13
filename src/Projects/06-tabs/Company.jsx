@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Company({ data, setSelected, current }) {
   return (
@@ -6,7 +6,7 @@ function Company({ data, setSelected, current }) {
       {data.map((j, index) => (
         <button
           key={j.id}
-          className={`job-btn ${current == index && "active-btn"}`}
+          className={`job-btn ${current === index && "active-btn"}`}
           onClick={() => setSelected(index)}
         >
           {j.company}

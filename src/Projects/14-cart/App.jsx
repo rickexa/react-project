@@ -1,5 +1,5 @@
 import React from "react";
-import { AppProvider, useGlobalContext } from "./context";
+import { useGlobalContext } from "./context";
 
 // components
 import Navbar from "./Navbar";

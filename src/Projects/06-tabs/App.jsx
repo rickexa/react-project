@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import data from "./data";
 import Loading from "./Loading";
 import Company from "./Company";
 import JobInfo from "./JobInfo";
