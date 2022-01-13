@@ -1,0 +1,13 @@
+import React from "react";
+import App from "./App";
+import { AppProvider } from "./context";
+
+function Provider() {
+  return (
+    <AppProvider>
+      <App />
+    </AppProvider>
+  );
+}
+
+export default Provider;
