@@ -9,29 +9,23 @@ function App() {
     <BrowserRouter>
       <Nav keys={keys} />
       <Routes>
+        <Route path="/" element={home()} />
         {keys.map((k, i) => {
           const _k = k.toLowerCase();
           let route = _k === "cocktails" ? `/${_k}/*` : `/${_k}`;
           return <Route key={i} path={route} element={<div id={_k}>{Projects[k]}</div>} />;
         })}
-        {/*<Route path="/birthday" element={Projects.birthday} />
-        <Route path="/tours" element={<Projects.Tours />} />
-        <Route path="/reviews" element={<div id="reviews">Projects.Reviews</div>} />
-        <Route path="/accordion" element={<Projects.Accordion />} />
-        <Route path="/menu" element={<Projects.Menu />} />
-        <Route path="/tabs" element={<Projects.Tabs />} />
-        <Route path="/slider" element={<Projects.Slider />} />
-        <Route path="/lorem" element={<Projects.Lorem />} />
-        <Route path="/color" element={<Projects.Color />} />
-        <Route path="/grocery" element={<Projects.Grocery />} />
-        <Route path="/navbar" element={<Projects.NavBar />} />
-        <Route path="/sidebar" element={<Projects.Sidebar />} />
-        <Route path="/stripe" element={<Projects.Stripe />} /> 
-        <Route path="/cart" element={<Projects.Cart />} />
-        <Route path="/cocktails/*" element={<Projects.Cocktails />} />*/}
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
+
+function home() {
+  return (
+    <div style={{ textAlign: "center", marginTop: "6rem", fontSize: "3rem" }}>
+      <h1>Choose a project!</h1>
+    </div>
+  );
+}
