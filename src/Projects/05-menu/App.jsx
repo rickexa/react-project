@@ -4,6 +4,7 @@ import Categories from "./Categories";
 import items from "./data";
 
 function App() {
+  document.title = "Menu";
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filterItems, setFilterItems] = useState(items);
   const catList = [...new Set(items.map((i) => i.category))];
@@ -13,7 +14,7 @@ function App() {
     setFilterItems(filter);
   }, [selectedCategory]);
 
-  require("./index.css");
+  require("./index.scss");
   return (
     <div className="section menu">
       <div className="title">

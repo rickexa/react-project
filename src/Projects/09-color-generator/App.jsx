@@ -4,7 +4,9 @@ import SingleColor from "./SingleColor";
 import Values from "values.js";
 
 function App() {
-  require("./index.css");
+  document.title = "Color Generator";
+
+  require("./index.scss");
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
   const [list, setList] = useState([]);

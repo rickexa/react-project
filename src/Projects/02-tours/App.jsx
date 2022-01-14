@@ -5,7 +5,8 @@ import Tours from "./Tours";
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
-  require("./index.css");
+  document.title = "Tours";
+  require("./index.scss");
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
 
@@ -32,27 +33,33 @@ function App() {
 
   if (loading) {
     return (
-      <main>
-        <Loading />
-      </main>
+      <div id="tours">
+        <main>
+          <Loading />
+        </main>
+      </div>
     );
   }
   if (tours.length > 0)
     return (
-      <main>
-        <Tours tours={tours} removeTour={removeTour} />
-      </main>
+      <div id="tours">
+        <main>
+          <Tours tours={tours} removeTour={removeTour} />
+        </main>
+      </div>
     );
   else
     return (
-      <main>
-        <div className="title">
-          <h2>No Tours Left</h2>
-          <button className="btn" onClick={() => getTours()}>
-            Refresh
-          </button>
-        </div>
-      </main>
+      <div id="tours">
+        <main>
+          <div className="title">
+            <h2>No Tours Left</h2>
+            <button className="btn" onClick={() => getTours()}>
+              Refresh
+            </button>
+          </div>
+        </main>
+      </div>
     );
 }
 

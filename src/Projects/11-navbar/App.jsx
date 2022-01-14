@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 
 function App() {
-  require("./index.css");
+  document.title = "Navbar";
+  require("./index.scss");
   return (
     <>
       <Navbar />

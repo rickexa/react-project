@@ -4,7 +4,8 @@ import data from "./questions";
 import SingleQuestion from "./Question";
 
 function App() {
-  require("./index.css");
+  document.title = "Accordion";
+  require("./index.scss");
   return (
     <main>
       <div className="container">

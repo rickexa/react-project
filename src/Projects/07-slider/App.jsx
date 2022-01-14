@@ -4,7 +4,8 @@ import Slider from "./Slider";
 import Person from "./Person";
 
 function App() {
-  require("./index.css");
+  document.title = "Slider";
+  require("./index.scss");
   const [people] = useState(data);
   const [selected, setSelected] = useState(0);
 

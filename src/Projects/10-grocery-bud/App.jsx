@@ -4,7 +4,9 @@ import Alert from "./Alert";
 
 function App() {
   document.title = "Grocery Bud";
-  require("./index.css");
+
+  document.title = "Grocery Bud";
+  require("./index.scss");
   const [name, setName] = useState("");
   const [list, setList] = useState(getLocalStorage());
   const [isEditing, setIsEditing] = useState(false);

@@ -5,7 +5,8 @@ import Home from "./Home";
 import { AppProvider } from "./context";
 
 function App() {
-  require("./index.css");
+  document.title = "Sidebar Modal";
+  require("./index.scss");
 
   return (
     <AppProvider>

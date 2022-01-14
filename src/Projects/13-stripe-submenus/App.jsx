@@ -6,7 +6,8 @@ import Submenu from "./Submenu";
 import { AppProvider } from "./context";
 
 function App() {
-  require("./index.css");
+  document.title = "Stripe Submenus";
+  require("./index.scss");
 
   return (
     <AppProvider>

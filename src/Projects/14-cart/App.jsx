@@ -7,7 +7,8 @@ import CartContainer from "./CartContainer";
 // items
 
 function App() {
-  require("./index2.scss");
+  document.title = "Cart";
+  require("./index.scss");
   const { loading } = useGlobalContext();
   if (loading) {
     return (

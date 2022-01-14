@@ -3,6 +3,7 @@ import data from "./data";
 import List from "./components/List";
 
 function App() {
+  document.title = "Birthday Reminder";
   require("./index.scss");
   const [people, setPeople] = useState(data);
   return (

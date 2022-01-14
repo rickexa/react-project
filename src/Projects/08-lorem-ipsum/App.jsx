@@ -4,7 +4,8 @@ import data from "./data";
 import Lorem from "./Lorem";
 
 function App() {
-  require("./index.css");
+  document.title = "Lorem Ipsum";
+  require("./index.scss");
   const [pCount, setPCount] = useState(0);
   const [paragraphs, setParagraphs] = useState([]);
 

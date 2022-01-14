@@ -2,7 +2,8 @@ import React from "react";
 import Review from "./Review";
 
 function App() {
-  require("./index.css");
+  document.title = "Reviews";
+  require("./index.scss");
 
   return (
     <main>

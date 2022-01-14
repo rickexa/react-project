@@ -5,7 +5,8 @@ import JobInfo from "./JobInfo";
 
 const url = "https://course-api.com/react-tabs-project";
 function App() {
-  require("./index.css");
+  document.title = "Tabs";
+  require("./index.scss");
   const [loading, setLoading] = useState(true);
   const [jobs, setJobs] = useState([]);
   const [selected, setSelected] = useState(0);

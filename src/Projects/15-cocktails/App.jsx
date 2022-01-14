@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import { AppProvider } from "./context";
 
 function App() {
+  document.title = "Cocktails";
   require("./index.scss");
   return (
     <AppProvider>
